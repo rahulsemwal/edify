@@ -1,0 +1,167 @@
+/*Author: Rahul Semwal
+**@DOC: CSS for Making Editor more comforatable
+**@NOTE: pre[class*=language-].highlighting used to overwrite prism.css selectors
+**@Optimization: Think about multiple font family 
+**@Optimization: Think about to make css as plugin and would be flexible for user to include 
+their own style on top of .editor or .live-board lke font family, header, backgrounds, text color, 
+Editor's tag color is bit difficult to modify as we are stick to one theme given in prism.css but 
+we can allow user to modify theme as well (v2) 
+**@Lookup: Rahul comments below
+**/
+
+.editing, pre[class*=language-].highlighting {
+  /* Both elements need the same text and space styling so they are directly on top of each other */
+  /* margin: 10px; removed by rahul*/
+  margin: 0px; /*added by rahul*/
+  padding: 10px;
+  border: 0;
+  /* width: calc(100% - 32px); commented by Rahul*/  
+  /* height: 150px; commented by Rahul*/
+  height: 450px;
+}
+.editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * {
+  /* Also add text styles to highlighing tokens */
+  /* font-size: 15pt; */
+  font-size: 10pt;
+  /* font-family: monospace; commented by Rahul*/
+  font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+  /* line-height: 20pt; */
+  line-height: 15pt;
+  tab-size: 2;
+}
+
+
+.editing, pre[class*=language-].highlighting {
+  /* In the same place */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0; /*Added nby rahul*/
+}
+
+
+/* Move the textarea in front of the result */
+
+.editing {
+  z-index: 1;
+}
+pre[class*=language-].highlighting {
+  z-index: 0;
+}
+
+
+/* Make textarea almost completely transparent */
+
+.editing {
+  color: transparent;
+  background: transparent;
+  caret-color: white; /* Or choose your favourite color */
+}
+
+/* Can be scrolled */
+.editing, pre[class*=language-].highlighting {
+  overflow: auto;
+  white-space: nowrap; /* Allows textarea to scroll horizontally */
+}
+
+/* No resize on textarea */
+.editing {
+  resize: none;
+}
+
+/* Paragraphs; First Image */
+* {
+  /* font-family: "Fira Code", monospace; removed by Rahul */
+}
+p code {
+  border-radius: 2px;
+  background-color: #eee;
+  color: #111;
+}
+
+/* common css */
+.hidden{
+  display: none;
+}
+
+/*@DOC: CSS for Editor look and feel (flexible), Rahul below is not optimized, do it next*/
+
+.live-board {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.live-board {
+  width: 60%;
+  display: flex;
+  margin-bottom: 35px;
+}
+.live-board header{
+  overflow: auto;
+}
+.live-board header>.cell1{
+  float:left;
+}
+.live-board header>.cell2{
+  float:right;
+  font-family: fantasy;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: CAPITALIZE;
+}
+.live-board .left {
+  flex: 0 0 70%;
+}
+.live-board .right {
+  flex: 0 0 30%;
+}
+.live-board header {
+  margin: 0;
+  padding: 0px 10px;
+  border-top-left-radius: 10px;
+  background: rgb(32, 35, 42);
+  color: #999;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 3;
+  text-transform: uppercase;
+  text-align: start;
+  letter-spacing: 0.08em;
+}
+.live-board .right header{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  background-color: rgb(236, 236, 236);
+}
+.live-board .editor{
+  position:relative; /*Rahul shift this to above where position absolute is present*/
+}
+.live-board .editing{
+  outline: none; /*Rahul shift this to above where position absolute is present*/
+}
+.live-board pre[class*=language-].highlighting {
+  border-radius: 0px;
+  /* outline: none; */
+  overflow: auto;
+  tab-size: 1.5em;
+  background: rgb(40, 44, 52);
+  font-size: 14px;
+  line-height: 20px;
+  /* white-space: pre-wrap; */
+  word-break: break-word;
+}
+.live-board code[class*=language-] {
+  /* font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace; */
+}
+.live-board .right .preview {
+  /* padding: 10px; rahul removed as iframe introduced for scoping*/
+  overflow: auto;
+  height: 450px;
+}
+.live-board .right .preview iframe {
+  height:100%;
+  width:100%;
+}
+
+
