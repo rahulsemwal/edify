@@ -8,26 +8,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../lib/css/prism.css">
 <link rel="stylesheet" href="../lib/css/edify.css">
-<!-- <link rel="stylesheet" href="./style3.css"> -->
-
+<style>
+  html{
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
+  }
+</style>
 
 </head>
 <body>
-  <h3>Creating Edify online average editor</h3>
-  <!-- <edify language="js" preview = "true" execution="markup" target="markup1"></edify> -->
+  <h3>Edify online editor with result panel</h3>
+  <p>Live demo of edify editor inside edify tada!, play with it and same you can build on your website</p>
+  <edify language="html" preview="true" execution="file-markup" target="samples/sample2.html"></edify>vefda
+  <p>Edify example with custom style as width = default (100%) and height = default (492px) </p>
   <edify language="js" preview="true" execution="file-markup" target="samples/sample4.js"></edify>
-  <p>
-    ChatGPT[a] is an artificial-intelligence (AI) chatbot developed by OpenAI and launched in November 2022. It is built on top of OpenAI's GPT-3.5 and GPT-4 families of large language models (LLMs) and has been fine-tuned (an approach to transfer learning) using both supervised and reinforcement learning techniques.
-
-    ChatGPT was launched as a prototype on November 30, 2022. It garnered attention for its detailed responses and articulate answers across many domains of knowledge.[3] Its uneven factual accuracy, however, has been identified as a significant drawback.[4] Following the release of ChatGPT, OpenAI's valuation was estimated at US$29 billion in 2023.[5]
-
-    The original release of ChatGPT was based on GPT-3.5. A version based on GPT-4, the newest OpenAI model, was released on March 14, 2023, and is available for paid subscribers on a limited basis.
-  </p>
-  <edify language="css" preview="true" execution="file-markup" target="samples/sample3.css" style="width:80%; height: 600px; margin-left:auto;"></edify>
-  <edify language="html" preview="true" execution="file-markup" target="samples/sample1.html" style="width:60%; margin-left:auto; margin-right:auto;"></edify>
+  <p>Edify example with custom style as width = 80% and height = 600px </p>
+  <edify language="css" preview="true" execution="file-markup" target="samples/sample3.css" style="width:80%; height: 600px;"></edify>
+  <p>Edify example with custom style as width = 60% and height = default (492px) </p>
+  <edify language="html" preview="true" execution="file-markup" target="samples/sample1.html" style="width:60%;"></edify>
+  <p>Edify example with custom style as width = 60% and height = default (492px) </p>
   <edify language="html" preview="true" execution="markup" target="markup1" style="width:60%;"></edify>
-  <edify language="html" preview="true" execution="script-markup" target="markup2" style="width:60%; margin-left:auto;"></edify>
-  <edify language="html" preview="true">
+  <p>Edify example with custom style as width = 60% and height = default (492px) </p>
+  <edify language="html" preview="true" execution="script-markup" target="markup2" style="width:60%;"></edify>
+  <p>Edify example with custom style as width = 60% and height = default (492px) </p>
+  <edify language="html" preview="true" style="width:60%;">
     <h1>Hello Edify!</h1>
   </edify>
     
@@ -41,8 +44,8 @@
   <!-- partial -->
   <script id = "markup2" type="text/html">
     <div>
-      <h1>make over test</h1>
-      <p>Test is begin with a rule of making makeover</p>
+      <h1>Government Survey</h1>
+      <p>Tell us about your city conditions</p>
     </div>
   </script>
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js'></script> -->

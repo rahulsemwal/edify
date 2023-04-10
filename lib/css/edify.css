@@ -14,7 +14,6 @@ we can allow user to modify theme as well (v2)
   margin: 0px; /*added by rahul*/
   padding: 10px;
   border: 0;
-  
 }
 .editing, pre[class*=language-].highlighting {
   /* In the same place */
@@ -65,15 +64,6 @@ pre[class*=language-].highlighting {
   resize: none;
 }
 
-/* Paragraphs; First Image */
-
-/* p code {
-  border-radius: 2px;
-  background-color: #eee;
-  color: #111;
-} */
-
-
 /*@DOC: CSS for Editor look and feel (flexible), Rahul below is not optimized, do it next*/
 
 /* common css */
@@ -88,6 +78,7 @@ pre[class*=language-].highlighting {
   -webkit-font-smoothing: antialiased;
 }
 .live-board {
+  /* @exposed */
   width: 100%;
   height:492px;
   display: flex;
@@ -101,7 +92,8 @@ pre[class*=language-].highlighting {
 .live-board .right {
   /* @exposed */
   /* flex: 0 0 30%; */
-  flex: 0.1 0 auto;
+  /* flex: 0.1 0 auto; */
+  flex: 0 0 40%;
 }
 .live-board header {
   margin: 0;
