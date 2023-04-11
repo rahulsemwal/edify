@@ -31,11 +31,8 @@ we can allow user to modify theme as well (v2)
 }
 .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * {
   /* Also add text styles to highlighing tokens */
-  /* font-size: 15pt; */
   font-size: 10pt;
-  /* font-family: monospace; commented by Rahul*/
   font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;
-  /* line-height: 20pt; */
   line-height: 15pt;
   tab-size: 2;
 }
@@ -64,12 +61,15 @@ pre[class*=language-].highlighting {
   resize: none;
 }
 
-/*@DOC: CSS for Editor look and feel (flexible), Rahul below is not optimized, do it next*/
-
-/* common css */
-.hidden{
-  display: none;
-}
+/*@DOC: .live-board css is a flexible css, below are some exposed classes where end user can modify it's dimentions as per their need
+**@Width of edify: .live-board  { width : <custom width parameter> }
+**@Height of edify: .live-board { height : <custom height parameter> }
+**@Font family edify: .live-board { font-family: <custom font family> } 
+**@Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
+**@Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
+**@Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> } 
+**@Edify theme depends upon prism.css <prism-tomorrow>, which can be replaced with other theme, can be downloaded from https://prismjs.com/download.html [Not tested yet]
+*/
 
 .live-board {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -134,17 +134,12 @@ pre[class*=language-].highlighting {
 }
 .live-board pre[class*=language-].highlighting {
   border-radius: 0px;
-  /* outline: none; */
   overflow: auto;
   tab-size: 1.5em;
   background: rgb(40, 44, 52);
   font-size: 14px;
   line-height: 20px;
-  /* white-space: pre-wrap; */
   word-break: break-word;
-}
-.live-board code[class*=language-] {
-  /* font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace; */
 }
 .live-board .right .preview {
   overflow: auto;
@@ -152,6 +147,12 @@ pre[class*=language-].highlighting {
 .live-board .right .preview iframe {
   height:100%;
   width:100%;
+}
+
+/* common css */
+
+.hidden{
+  display: none;
 }
 
 
