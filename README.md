@@ -5,12 +5,12 @@ Edify is a light weight, web based online editor plugin for websites and can be 
 https://rahulsemwal.github.io/edify/examples/index.html
 
 # Uses
-## Step 1: include all files from lib folder like prism.css, edify.css, prism.js and edify.js into your website.
-## Step 2: add below syntax into your website and enjoy writing HTML online with live preview.
+* Step 1: include all files from lib folder like prism.css, edify.css, prism.js and edify.js into your website.
+* Step 2: add below syntax into your website and enjoy writing HTML online with live preview.
   ```
   <edify language="html" preview="true"><h1>Hello edify!</h1></edify>
- ```
-## Step 3: Try other examples from examples/index.html and examples/sample/
+  ```
+* Step 3: Try other examples from examples/index.html and examples/sample/
 
 # Documentation
 ## Syntax and Parameters
