@@ -6,7 +6,7 @@ https://rahulsemwal.github.io/edify/examples/index.html
 
 # Uses
 ##Step 1: include all files from lib folder like prism.css, edify.css, prism.js and edify.js into your website.
-##Step 2: add '<edify language="html" preview="true"><h1>Hello edify!</h1></edify>' element into your website and enjoy writing HTML online with live preview.
+##Step 2: add <!-- <edify language="html" preview="true"><h1>Hello edify!</h1></edify> --> element into your website and enjoy writing HTML online with live preview.
 ##Step 3: Try other examples from examples/index.html and examples/sample/
 
 # Documentation
@@ -14,7 +14,7 @@ https://rahulsemwal.github.io/edify/examples/index.html
 @Abriviation
 @(D) = Default
 @[*] = Mandatory
-@Tag <edify language="" preview="" execution="" target="" style=""></edify> 
+@Tag <!-- <edify language="" preview="" execution="" target="" style=""></edify> --> 
 @Params  language  =  "html" | "js" | "css" [[*] Mandatory]
 @Params  preview   =  "false" (D) | "true" 
 @Params  execution =  "file-markup" | "markup" | "script-markup" | ""  
