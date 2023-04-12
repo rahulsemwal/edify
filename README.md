@@ -20,11 +20,11 @@ https://rahulsemwal.github.io/edify/examples/index.html
 - Syntax ``` <edify language="" preview="" execution="" target="" style=""></edify> ```
 - Parameters
   * language  =  `"html" | "js" | "css"` [*]
-  * preview   =  `"false" (D) | "true"` 
-  * execution =  `"file-markup" | "markup" | "script-markup" | ""`  
+  * preview   =  `"false" (D) | "true"` [*]
+  * execution =  `"file-markup" | "markup" | "script-markup" | ""` [*]  
   * target    =  `"Filename with path"` [*] mandatory in case of execution == file-markup
   * target    =  `"Id of an element"` [*] mandatory in case of execution == markup | script-markup
-  * target    =  `"Empty or target not defined"` not needed in case of execution == "" or execution not defined     
+  * target    =  `"Empty or target not defined"` not needed in case of execution == "" or exclude execution attribute from `<edify>`     
   * style     =  `"Any valid css"` which will be applied to the root element of the editor
 
 # Tasks
