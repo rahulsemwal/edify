@@ -4,7 +4,7 @@ Edify is a basic, light weighted web based online editor plugin for web apps, ca
 # Demo
 https://rahulsemwal.github.io/edify/examples/index.html
 
-# Uses
+# Uses [It's so easy to use! atleast give it a try]
 - Step 1: Include all files from lib folder like prism.css, edify.css, prism.js and edify.js into your website.
 - Step 2: Add below syntax into your website and enjoy writing HTML online with live preview.
   ``` 
@@ -31,9 +31,9 @@ https://rahulsemwal.github.io/edify/examples/index.html
   *    
   
 ## Features
-- Language : it supports HTML, JavaScript and CSS.
+- Language : it supports `HTML`, `JavaScript` and `CSS`.
 - Preview: it has result panel which simultaneously load latest edited data in edify editor. if preview attribute becomes false or "" (empty) then edify editor loads independently and takes result space as well.
--  
+-  Theme: Currently Edify supports `Tomorrow Night` prismjs theme, @ref: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript&plugins=normalize-whitespace
 
 # Tasks
 - [x] Task: Let's make it as generic plugin which can be used multiple times in any website and later on fix bugs - [FIXED]
@@ -49,7 +49,21 @@ https://rahulsemwal.github.io/edify/examples/index.html
 - [x] TASK: Error handling of <edify> element with different attribute combinations - [Done] 
 - [x] TASK: Manage height issue while preview is not available of top edify element [Done] 
 - [ ] TASK: Code and file optimization [In progress]
+- [ ] TASK: addons feature plugins like: 
+  * [ ] genric plugin/addons builder, 
+  * [ ] advanced indentation engine for markups taking extra indent during initial loads, 
+  * [ ] `ctrl + /` comment plugin, 
+  * [ ] Preview debouncing plugin
+- [ ] TASK: Check for other prism theme
+- [ ] TASK: Provide support for other languages apart from HTML, JS and CSS.
 
+# Contribution
+  - I would love to welcome more contributors who can contribute to make it even richer than it is today.
+  - Contribution is so simple, first take a fork, go through the documentation above, work on pending tasks or create issue and at last give a pull request, that's all.
+  - Once you take fork then you need to run a server at root folder of the project and access examples/index.html over browser through localhost.
+  - Server: `google 200 ok`, `node http` or any server which launch `localhost`. 
+  - I am always open for the communication and I would prefer to communicate on github issue chat or on my linked-in chat (https://www.linkedin.com/in/rahul-semwal/).  
+  
 # References
   - https://prismjs.com/
   - https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/ 
