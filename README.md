@@ -10,7 +10,7 @@ https://rahulsemwal.github.io/edify/examples/index.html
   ``` 
   <edify language="html" preview="true"><h1>Hello edify!</h1></edify> 
   ```
-- Step 3: Try other examples from examples/index.html and examples/sample/
+- Step 3: Try out [Demo](#demo) above and explore code in examples/index.html and examples/sample/
 
 # Documentation
 ## Syntax and Parameters
@@ -27,8 +27,13 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * target    =  `"Empty or target not defined"` not needed in case of execution == "" or exclude execution attribute from `<edify>`     
   * style     =  `"Any valid css"` which will be applied to the root element of the editor
 - Exposed CSS classes
-  * .live-board : it is a parent css class of edify editor and result pannel, can be used for css customization like height, width, alignment, etc..
-  *    
+  * .live-board : Edify build upon strong principle of customization, below are some exposed classes where we can modify it's dimentions and look n feel.
+  * Width of edify: .live-board  { width : <custom width parameter> }
+  * Height of edify: .live-board { height : <custom height parameter> }
+  * Font family edify: .live-board { font-family: <custom font family> } 
+  * Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
+  * Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
+  * Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> }   
   
 ## Features
 - Language : it supports `HTML`, `JavaScript` and `CSS`.
