@@ -59,8 +59,8 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * [ ] advanced indentation engine for markups taking extra indent during initial loads, 
   * [ ] `ctrl + /` comment plugin, 
   * [ ] Preview debouncing plugin
-- [ ] TASK: Check for other prism theme
-- [ ] TASK: Provide support for other languages apart from HTML, JS and CSS.
+- [ ] TASK: Create custom theme by extracting all colors from `edify.css` and check for other prism theme
+- [ ] TASK: Provide support for other languages apart from `HTML`, `JS` and `CSS`.
 
 # Contribution
   - I would love to welcome more contributors who can contribute to make it even richer than it is today.
