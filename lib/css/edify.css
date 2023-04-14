@@ -61,14 +61,14 @@ pre[class*=language-].highlighting {
   resize: none;
 }
 
-/*@DOC: .live-board css is a flexible css, below are some exposed classes where end user can modify it's dimentions as per their need
-**@Width of edify: .live-board  { width : <custom width parameter> }
-**@Height of edify: .live-board { height : <custom height parameter> }
-**@Font family edify: .live-board { font-family: <custom font family> } 
-**@Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
-**@Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
-**@Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> } 
-**@Edify theme depends upon prism.css <prism-tomorrow>, which can be replaced with other theme, can be downloaded from https://prismjs.com/download.html [Not tested yet]
+/*@TECH DOC: .live-board css is a flexible css, below are some exposed classes where end user can modify it's dimentions as per their need
+* Width of edify: .live-board  { width : <custom width parameter> }
+* Height of edify: .live-board { height : <custom height parameter> }
+* Font family edify: .live-board { font-family: <custom font family> } 
+* Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
+* Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
+* Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> } 
+* Edify theme depends upon prism.css <prism-tomorrow>, which can be replaced with other theme, can be downloaded from https://prismjs.com/download.html [Not tested yet]
 */
 
 .live-board {
