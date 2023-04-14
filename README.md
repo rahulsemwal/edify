@@ -28,12 +28,12 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * style     =  `"Any valid css"` which will be applied to the root element of the editor
 - Exposed CSS classes
   * .live-board : Edify build upon strong principle of customization, below are some exposed classes where we can modify it's dimentions and look n feel.
-  * Width of edify: .live-board  { width : <custom width parameter> }
-  * Height of edify: .live-board { height : <custom height parameter> }
-  * Font family edify: .live-board { font-family: <custom font family> } 
-  * Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
-  * Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
-  * Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> }   
+  * Width of edify: .live-board  { `width : <custom width parameter>` }
+  * Height of edify: .live-board { `height : <custom height parameter>` }
+  * Font family edify: .live-board { `font-family: <custom font family>` } 
+  * Width of edify's editor panel: .live-board .left { `flex : <custom width parameter or percentage>` }
+  * Width of edify's result panel: .live-board .right { `flex : <custom width parameter or percentage>` }
+  * Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { `font-family: <custom font family>` }   
   
 ## Features
 - Language : It supports `HTML`, `JavaScript` and `CSS`.
@@ -46,13 +46,13 @@ https://rahulsemwal.github.io/edify/examples/index.html
 - [x] BUG: when using multiple .live-boards all overrides previous one on browser due to absolute positioning. - [FIXED]
 - [x] BUG: Written css under Edify is not scoped to preview block other wise it is applying to outside HTML - [FIXED iframe introduced]
 - [x] BUG: External resorces line script, link, img etc are not loading inside iframe - [FiXED with Iframe after giving correct target according to the server root]  
-- [x] BUG: optimize added css and think to use css as plugin, should be flexible for users, font family of Edify - [Fixed]
+- [x] BUG: optimize added css and think to use css as plugin, should be flexible for users, font family of Edify - [FIXED]
 - [x] TASK: Let's create Editor's language as HTML/JavaScript/CSS in live board to make Editor available for all type of format - [DONE] 
-- [x] TASK: Let's write generic and extensible (from outside) css for .live-board - [Done]
+- [x] TASK: Let's write generic and extensible (from outside) css for .live-board - [DONE]
 - [x] TASK: let's create `<Edify><Edify>` custom tag which can further replaced by .live-board element. - [DONE]
 - [x] TASK: `<edify language="html" preview="true" execution="file-markup" target="../../index.html" style="height:200px"></edify>` will be replaced by `<div class="live-board"></div>` [DONE]   
-- [x] TASK: Error handling of <edify> element with different attribute combinations - [Done] 
-- [x] TASK: Manage height issue while preview is not available of top edify element [Done] 
+- [x] TASK: Error handling of <edify> element with different attribute combinations - [DONE] 
+- [x] TASK: Manage height issue while preview is not available of top edify element [DONE] 
 - [ ] TASK: Code and file optimization [In progress]
 - [ ] TASK: addons feature plugins like: 
   * [ ] genric plugin/addons builder, 
