@@ -36,8 +36,8 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> }   
   
 ## Features
-- Language : it supports `HTML`, `JavaScript` and `CSS`.
-- Preview: it has result panel which simultaneously load latest edited data in edify editor. if preview attribute becomes false or "" (empty) then edify editor loads independently and takes result space as well.
+- Language : It supports `HTML`, `JavaScript` and `CSS`.
+- Preview: It has result panel which simultaneously load latest edited data in edify editor. if preview attribute becomes false or "" (empty) then edify editor loads independently and takes result space as well.
 -  Theme: Currently Edify supports `Tomorrow Night` prismjs theme, @ref: https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript&plugins=normalize-whitespace
 
 # Tasks
