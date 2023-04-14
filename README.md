@@ -1,4 +1,4 @@
-# edify
+# `<edify>`
 Edify is a basic, light weighted web based online editor plugin for web apps, can be useful for developers, code content creators and educational purpose. Currently it supports HTML, JavaScript and CSS languages only. This editor is build on top of prismjs (https://prismjs.com/) code highlighting library.  
 
 # Demo
