@@ -67,8 +67,9 @@ https://rahulsemwal.github.io/edify/examples/index.html
   - Contribution is so simple. First take a fork, go through the documentation above, work on pending tasks or create issue and at last give a pull request. that's all.
   - Once you take fork then you need to run a server at root folder of the project and access examples/index.html over browser through localhost.
   - Server: `google 200 ok`, `node http` or any server which launch `localhost`. 
-  - I am always open for the communication and I would prefer to communicate on github issue chat or on my social accounts chat below 
-    [LinkedIn](https://www.linkedin.com/in/rahul-semwal/), [Twitter](https://twitter.com/RahulSemwal91).  
+  - I am always open for the discussion and would prefer to communicate on github issue chat or on my social media accounts below 
+    * [LinkedIn](https://www.linkedin.com/in/rahul-semwal/) 
+    * [Twitter](https://twitter.com/RahulSemwal91)  
   
 # References
   - https://prismjs.com/
