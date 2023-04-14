@@ -1,5 +1,5 @@
 # `<edify>`
-Edify is a basic, light weighted web based online editor plugin for web apps, can be useful for developers, code content creators and educational purpose. Currently it supports HTML, JavaScript and CSS languages only. This editor is build on top of prismjs (https://prismjs.com/) code highlighting library.  
+Edify is a basic, light weighted web based online editor plugin for web apps, can be useful for developers, code content creators and educational purpose. Currently it supports HTML, JavaScript and CSS languages only. This editor is build on top of [prismjs](https://prismjs.com/) code highlighting library.  
 
 # Demo
 https://rahulsemwal.github.io/edify/examples/index.html
@@ -22,9 +22,9 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * language  =  `"html" | "js" | "css"` [*]
   * preview   =  `"false" (D) | "true"` [*]
   * execution =  `"file-markup" | "markup" | "script-markup" | ""` [*]  
-  * target    =  `"Filename with path"` [*] mandatory in case of execution == file-markup
-  * target    =  `"Id of an element"` [*] mandatory in case of execution == markup | script-markup
-  * target    =  `"Empty or target not defined"` not needed in case of execution == "" or exclude execution attribute from `<edify>`     
+  * target    =  `"Filename with path"` [*] mandatory in case of execution == `"file-markup"`
+  * target    =  `"Id of an element"` [*] mandatory in case of execution == `"markup"` | `"script-markup"`
+  * target    =  `"Empty or target not defined"` not needed in case of execution == `""` or exclude execution attribute from `<edify>`     
   * style     =  `"Any valid css"` which will be applied to the root element of the editor
 - Exposed CSS classes
   * .live-board : Edify build upon strong principle of customization, below are some exposed classes where we can modify it's dimentions and look n feel.
@@ -67,7 +67,8 @@ https://rahulsemwal.github.io/edify/examples/index.html
   - Contribution is so simple. First take a fork, go through the documentation above, work on pending tasks or create issue and at last give a pull request. that's all.
   - Once you take fork then you need to run a server at root folder of the project and access examples/index.html over browser through localhost.
   - Server: `google 200 ok`, `node http` or any server which launch `localhost`. 
-  - I am always open for the communication and I would prefer to communicate on github issue chat or on my linked-in chat (https://www.linkedin.com/in/rahul-semwal/).  
+  - I am always open for the communication and I would prefer to communicate on github issue chat or on my social accounts chat below 
+    [LinkedIn](https://www.linkedin.com/in/rahul-semwal/), [Twitter](https://twitter.com/RahulSemwal91).  
   
 # References
   - https://prismjs.com/
