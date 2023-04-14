@@ -1,17 +1,19 @@
-/*Author: Rahul Semwal
-**@DOC: CSS for Making Editor more comforatable
-**@NOTE: pre[class*=language-].highlighting used to overwrite prism.css selectors
-**@Optimization: Think about multiple font family 
-**@Optimization: Think about to make css as plugin and would be flexible for user to include 
-their own style on top of .editor or .live-board lke font family, header, backgrounds, text color, 
-Editor's tag color is bit difficult to modify as we are stick to one theme given in prism.css but 
-we can allow user to modify theme as well (v2) 
-**@Lookup: Rahul comments below
-**/
+/*
+* @Author: Rahul Semwal
+* @Version: 0.1
+* @TECH DOC: .live-board css is a flexible css, below are some exposed classes where end user can modify it's dimentions as per their need
+* Width of edify: .live-board  { width : <custom width parameter> }
+* Height of edify: .live-board { height : <custom height parameter> }
+* Font family edify: .live-board { font-family: <custom font family> } 
+* Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
+* Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
+* Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> } 
+* Edify theme depends upon prism.css <prism-tomorrow>, which can be replaced with other theme, can be downloaded from https://prismjs.com/download.html [Not tested yet]
+*/
 
 .editing, pre[class*=language-].highlighting {
   /* Both elements need the same text and space styling so they are directly on top of each other */
-  margin: 0px; /*added by rahul*/
+  margin: 0px;
   padding: 10px;
   border: 0;
 }
@@ -20,7 +22,7 @@ we can allow user to modify theme as well (v2)
   position: absolute;
   top: 0;
   left: 0;
-  right:0; /*Added by rahul*/
+  right:0;
 }
 .editing, pre[class*=language-].highlighting {
   /* Can be scrolled */
@@ -61,15 +63,7 @@ pre[class*=language-].highlighting {
   resize: none;
 }
 
-/*@TECH DOC: .live-board css is a flexible css, below are some exposed classes where end user can modify it's dimentions as per their need
-* Width of edify: .live-board  { width : <custom width parameter> }
-* Height of edify: .live-board { height : <custom height parameter> }
-* Font family edify: .live-board { font-family: <custom font family> } 
-* Width of edify's editor panel: .live-board .left { flex : <custom width parameter or percentage> }
-* Width of edify's result panel: .live-board .right { flex : <custom width parameter or percentage> }
-* Font family edify's editor: .editing, pre[class*=language-].highlighting, pre[class*=language-].highlighting * { font-family: <custom font family> } 
-* Edify theme depends upon prism.css <prism-tomorrow>, which can be replaced with other theme, can be downloaded from https://prismjs.com/download.html [Not tested yet]
-*/
+/*----------------------------LIVE-BOARD CSS---------------------------------------*/
 
 .live-board {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
