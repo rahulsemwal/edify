@@ -53,13 +53,15 @@ https://rahulsemwal.github.io/edify/examples/index.html
 - [x] TASK: `<edify language="html" preview="true" execution="file-markup" target="../../index.html" style="height:200px"></edify>` will be replaced by `<div class="live-board"></div>` [DONE]   
 - [x] TASK: Error handling of <edify> element with different attribute combinations - [DONE] 
 - [x] TASK: Manage height issue while preview is not available of top edify element [DONE] 
-- [ ] TASK: Code and file optimization [In progress]
+- [x] TASK: Code and file optimization [Done]
 - [ ] TASK: addons feature plugins like: 
-  * [ ] genric plugin/addons builder, 
+  * [ ] genric plugin/addons builder 
   * [ ] advanced indentation engine for markups taking extra indent during initial loads, 
-  * [ ] `ctrl + /` comment plugin, 
+  * [ ] `ctrl + /` comment plugin 
   * [ ] Preview debouncing plugin
-- [ ] TASK: Create custom theme by extracting all colors from `edify.css` and check for other prism theme
+  * [ ] Load third party resources native plugin with UI integration
+  * [ ] Show multiple files tabs including preview tab with UI Intefration
+- [ ] TASK: Create custom theme by extracting all colors from `edify.css` and allow integration of other prismJs themes
 - [ ] TASK: Provide support for other languages apart from `HTML`, `JS` and `CSS`.
 
 # Contribution
