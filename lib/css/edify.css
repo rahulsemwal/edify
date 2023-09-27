@@ -129,11 +129,11 @@ pre[class*=language-].highlighting {
 .live-board pre[class*=language-].highlighting {
   border-radius: 0px;
   overflow: auto;
-  tab-size: 1.5em;
+  /* tab-size: 1.5em; should be same as Textarea tag has*/
   background: rgb(40, 44, 52);
-  font-size: 14px;
-  line-height: 20px;
-  word-break: break-word;
+  /* font-size: 14px; should be same as Textarea tag has*/
+  /* line-height: 20px; should be same as Textarea tag has*/
+  word-break: break-word;git 
 }
 .live-board .right .preview {
   overflow: auto;
