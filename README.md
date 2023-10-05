@@ -61,7 +61,10 @@ https://rahulsemwal.github.io/edify/examples/index.html
   * [ ] Preview debouncing plugin
   * [ ] Load third party resources native plugin with UI integration
   * [ ] Show multiple files tabs including preview tab with UI Intefration
+- [ ] TASK: Create Theme setting to change theme direclty into browser
+- [ ] TASK: Discover or Implement VS code dark theme, Developer may connect with it more.  
 - [ ] TASK: Create custom theme by extracting all colors from `edify.css` and allow integration of other prismJs themes
+- [ ] TASK: Create code snippet along with just code highlighting, editing and fullscreen feature. 
 - [ ] TASK: Provide support for other languages apart from `HTML`, `JS` and `CSS`.
 
 # Contribution
